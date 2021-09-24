@@ -77,7 +77,7 @@ def start_bot(start_url, email, college, collegeID, cookies, token):
             driver = webdriver.Chrome(executable_path=r'./webdriver/chromedriver')
         # For Firefox
         elif typex == 'firefox':
-            driver = webdriver.Firefox(executable_path=r'/root/geckodriver-0.30.0')
+            driver = webdriver.Firefox(executable_path=r'/usr/bin/geckodriver')
         elif typex == 'chrome_undetected':
             driver = uc.Chrome()
         elif typex == '':
